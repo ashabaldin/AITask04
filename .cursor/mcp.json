@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "onec-objects": {
+      "command": "node",
+      "args": ["src/mcp/onec-objects/dist/index.js"],
+      "envFile": "${userHome}/.cursor/mcp-env/onec-objects.env"
+    }
+  }
+}
