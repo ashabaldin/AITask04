@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="14c04c1c-6f46-4810-a368-e47a36138ae4">
+  <name>СчетаМагазина</name>
+  <rootURL>objects</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="9360e8ea-266e-47d8-b554-9518853828a5">
+    <name>Типы</name>
+    <template>/types</template>
+    <methods uuid="4ef13667-55d8-4df7-b8dc-91b89bd1f6d7">
+      <name>Получить</name>
+      <handler>НайтиТипы</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="75967a88-5ee4-4f8a-b018-0af655376205">
+    <name>ОписаниеТипа</name>
+    <template>/type</template>
+    <methods uuid="8cefde02-bbab-4a2d-8f24-2d3fbdeaf458">
+      <name>Получить</name>
+      <handler>ОписатьТип</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="0ecedae1-8b28-42b6-9451-fd05c0180710">
+    <name>Поиск</name>
+    <template>/search</template>
+    <methods uuid="369b8d2f-8fd3-4609-a1c3-52f312ab76a2">
+      <name>Получить</name>
+      <handler>НайтиОбъекты</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="99130163-0469-4f20-9066-f9f7f8e9d9db">
+    <name>Объект</name>
+    <template>/object</template>
+    <methods uuid="f12aa160-2af1-4885-9a02-b32cf0cafa89">
+      <name>Получить</name>
+      <handler>ПрочитатьОбъект</handler>
+    </methods>
+    <methods uuid="36bf112e-0706-4b3a-a4db-899c26277d26">
+      <name>Создать</name>
+      <httpMethod>POST</httpMethod>
+      <handler>СоздатьОбъект</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="dcb13b73-d738-4410-9c4f-4c5b8aefd9ba">
+    <name>Регистр</name>
+    <template>/register</template>
+    <methods uuid="894342f4-8a4e-4243-b77e-6850ae3655dd">
+      <name>Получить</name>
+      <handler>ОписатьРегистр</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="d1243f6d-9855-4a83-a0ec-109ee0c8474f">
+    <name>СрезРегистра</name>
+    <template>/register/slice</template>
+    <methods uuid="a61c2047-9c6f-4f53-b9b0-15495b6b3bf4">
+      <name>Получить</name>
+      <handler>ПолучитьСрезРегистра</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="0b025622-4982-4267-91cd-18c88c87f8b5">
+    <name>ИсторияРегистра</name>
+    <template>/register/history</template>
+    <methods uuid="93806288-7bd7-4f81-95d4-dfa00acef514">
+      <name>Получить</name>
+      <handler>ПолучитьИсториюРегистра</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="7a9a52fa-977f-4505-83c3-d1ee4c6c318e">
+    <name>ЗаписьРегистра</name>
+    <template>/register/record</template>
+    <methods uuid="710cdc71-c4c5-40c8-abde-cd16175b3467">
+      <name>Создать</name>
+      <httpMethod>POST</httpMethod>
+      <handler>ЗаписатьЗначениеРегистра</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>
